@@ -3,6 +3,8 @@ import AllFilms from './AllFilms';
 //this is required
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import 'isomorphic-fetch';
+import LoadFilms from './LoadFilms';
+
 
 class App extends Component {
 
@@ -11,7 +13,8 @@ class App extends Component {
             <Fragment>
                 <Router>
                     <Switch>
-                        <AllFilms />
+                        <Route exact path="/" component={LoadFilms} />
+                        <Route exact path="/Home" component={AllFilms} />
                     </Switch>
                 </Router>
             </Fragment>
