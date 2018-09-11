@@ -5,7 +5,7 @@ const LoadFilms = () => {
     return (
         <Fragment>
             <img src="https://ghibliapi.herokuapp.com/images/logo.svg" ></img>
-            <Link to={'/Home'} className="btn btn-primary">Load Films</Link>
+            <Link to={'/Films'} className="btn btn-primary">Load Films</Link>
         </Fragment>
     )
 };
